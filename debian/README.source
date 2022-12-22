@@ -1,0 +1,10 @@
+Explanation for binary files inside source package according to
+  http://lists.debian.org/debian-devel/2013/09/msg00332.html
+
+Files: data/fruit.rda
+       data/sentences.rda
+       data/words.rda
+Documented: man/stringr-data.Rd
+  Sample character vectors for practicing string manipulations.
+
+ -- Andreas Tille <tille@debian.org>  Fri, 29 Sep 2017 23:19:18 +0200

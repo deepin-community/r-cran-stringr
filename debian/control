@@ -1,0 +1,30 @@
+Source: r-cran-stringr
+Maintainer: Debian R Packages Maintainers <r-pkg-team@alioth-lists.debian.net>
+Uploaders: Andreas Tille <tille@debian.org>
+Section: gnu-r
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-r,
+               r-base-dev,
+               r-cran-glue,
+               r-cran-magrittr,
+               r-cran-stringi (>= 1.1.7)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/r-pkg-team/r-cran-stringr
+Vcs-Git: https://salsa.debian.org/r-pkg-team/r-cran-stringr.git
+Homepage: https://cran.r-project.org/package=stringr
+Rules-Requires-Root: no
+
+Package: r-cran-stringr
+Architecture: all
+Depends: ${R:Depends},
+         ${misc:Depends}
+Recommends: ${R:Recommends}
+Suggests: ${R:Suggests}
+Description: Make it easier to work with strings
+ stringr is a set of simple wrappers that make R's string functions more
+ consistent, simpler and easier to use. It does this by ensuring that:
+ function and argument names (and positions) are consistent, all
+ functions deal with NA's and zero length character appropriately, and
+ the output data structures from each function matches the input data
+ structures of other functions.
